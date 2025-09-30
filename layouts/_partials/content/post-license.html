@@ -1,0 +1,88 @@
+{{/* 文章ライセンス情報コンポーネント
+  記事の著作権とライセンス情報を表示
+  @context {page} . 現在のページオブジェクト
+*/}}
+
+{{/* ライセンス設定を構築 */}}
+{{ $license := dict }}
+
+{{/* 既定値（日本語） */}}
+{{ $defaults := dict
+  "show" true
+  "author" (.Site.Params.author.name | default "")
+  "name" "CC BY-NC-SA 4.0"
+  "description" "本作品は クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンスの下で提供されています。"
+  "url" "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja"
+  "displayName" "クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際"
+}}
+
+{{ $license = $defaults }}
+{{ with .Site.Params.post.license }}
+  {{ $license = merge $license . }}
+{{ end }}
+{{ with .Params.license }}
+  {{ $license = merge $license . }}
+{{ end }}
+
+{{ if $license.show }}
+  <div class="post-license bg-muted/30 border-border mb-8 rounded-xl border p-6">
+    <div class="flex items-start gap-4">
+      <!-- ライセンスアイコン -->
+      <div
+        class="bg-primary/10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg">
+        {{ partial "features/icon.html" (dict "name" "license" "size" "lg" "ariaLabel" "ライセンス") }}
+      </div>
+
+      <!-- ライセンス情報 -->
+      <div class="flex-1 min-w-0">
+        <h3 class="text-foreground mb-2 text-lg font-semibold">
+          {{ i18n "license.title" | default "著作権表示" }}
+        </h3>
+
+        <div class="text-muted-foreground space-y-2 text-sm">
+          <!-- 著者 -->
+          {{ with $license.author }}
+          <p>
+            <strong>{{ i18n "license.author" | default "著者" }}:</strong>
+            {{ . }}
+          </p>
+          {{ end }}
+
+          <!-- 記事リンク -->
+          <p>
+            <strong>{{ i18n "license.link" | default "リンク" }}:</strong>
+            <a
+              href="{{ .Permalink }}"
+              class="text-primary hover:text-primary/80 transition-colors break-all hyphens-auto duration-200">
+              {{ .Permalink }}
+            </a>
+          </p>
+
+          <!-- ライセンス種別 -->
+          <p>
+            <strong>{{ i18n "license.type" | default "ライセンス" }}:</strong>
+            {{ with $license.url }}
+              <a
+                href="{{ . }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary hover:text-primary/80 transition-colors duration-200">
+                {{ $license.displayName }}
+              </a>
+            {{ else }}
+              <span class="text-foreground">{{ $license.displayName }}</span>
+            {{ end }}
+          </p>
+
+          <!-- ライセンス説明 -->
+          {{ with $license.description }}
+          <p class="text-xs">
+            {{ . }}
+          </p>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
+
