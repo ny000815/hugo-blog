@@ -131,20 +131,20 @@ enableEmoji = true
   defaultAuthor = "Yoshiaki Nozaki"
   language = "ja"
   shortName = "Hugo Narrow"
-  images = ["/images/og-default.avif"]
+  images = ["images/og-default.avif"]
 
   [params.logo]
-    image = "/images/logo.svg"
+    image = "images/logo.svg"
     link = "/"
 
   [params.favicon]
-    svg = "/images/logo.svg"
+    svg = "images/logo.svg"
 
   [params.author]
     name = "Yoshiaki Nozaki"
     title = "Yoshiaki's Blog"
     description = "A personal blog sharing thoughts on studying"
-    avatar = "/images/avatar.jpg"
+    avatar = "images/avatar.jpg"
 
     [[params.author.social]]
       name = "GitHub"
