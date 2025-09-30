@@ -1,4 +1,4 @@
-baseURL = "https://ny000815.github.io/hugo-blog/"
+baseURL = "https://localhost"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = false
@@ -138,7 +138,7 @@ enableEmoji = true
     link = "/"
 
   [params.favicon]
-    svg = "images/logo.svg"
+    svg = "images/favicon.svg"
 
   [params.author]
     name = "Yoshiaki Nozaki"
@@ -148,7 +148,7 @@ enableEmoji = true
 
     [[params.author.social]]
       name = "GitHub"
-      url  = "https://github.com/ny000815"
+      url  = "https://github.com/ny000815/hugo-blog/"
       icon = "github"
 
     [[params.author.social]]
