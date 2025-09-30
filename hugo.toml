@@ -1,0 +1,8 @@
+baseURL = "http://localhost/"
+title = "My Blog"
+languageCode = "ja"
+
+[module]
+  [[module.imports]]
+    path = "github.com/tom2almighty/hugo-narrow"
+
