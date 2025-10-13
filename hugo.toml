@@ -3,6 +3,7 @@ languageCode = "ja"
 defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = false
 title = "Yoshiaki's Blog"
+theme = "hugo-narrow"
 
 hasCJKLanguage = true
 enableEmoji = true
