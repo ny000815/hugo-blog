@@ -134,7 +134,7 @@ enableEmoji = true
   images = ["images/og-default.avif"]
 
   [params.logo]
-    image = "/images/logo.svg"
+    image = "images/logo.svg"
     link = "/"
 
   [params.favicon]
