@@ -1,9 +1,8 @@
-baseURL = "https://ny000815.github.io/hugo-blog/"
+baseURL = "https://localhost/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = false
 title = "Yoshiaki's Blog"
-theme = "hugo-narrow"
 
 hasCJKLanguage = true
 enableEmoji = true
