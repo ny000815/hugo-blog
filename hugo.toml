@@ -135,7 +135,7 @@ enableEmoji = true
 
   [params.logo]
     image = "https://i.postimg.cc/VkdTrhGD/avatar.jpg"
-    link = "/"
+    link = "/hugo-blog/"
 
   [params.favicon]
     svg = "https://i.postimg.cc/VkdTrhGD/avatar.jpg"
