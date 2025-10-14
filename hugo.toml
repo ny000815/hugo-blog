@@ -1,3 +1,6 @@
+[environments.development]
+baseURL = "https://localhost/"
+[environments.production]
 baseURL = "https://ny000815.github.io/hugo-blog/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
@@ -134,17 +137,17 @@ enableEmoji = true
   images = ["images/og-default.avif"]
 
   [params.logo]
-    image = "/images/logo.svg"
+    image = "https://i.postimg.cc/VkdTrhGD/avatar.jpg"
     link = "/"
 
   [params.favicon]
-    svg = "/images/favicon.svg"
+    svg = "https://i.postimg.cc/VkdTrhGD/avatar.jpg"
 
   [params.author]
     name = "Yoshiaki Nozaki"
     title = "Yoshiaki's Blog"
     description = "A personal blog sharing thoughts on studying"
-    avatar = "/images/avatar.jpg"
+    avatar = "https://i.postimg.cc/VkdTrhGD/avatar.jpg"
 
     [[params.author.social]]
       name = "GitHub"
