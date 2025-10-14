@@ -13,6 +13,4 @@ date: 2025-09-30T00:00:00+08:00
 - TOEIC 920
 - TOEFL 100(My Best 104)
 - GRE 320(V:153, Q:167)
-- AWS Solution Architect
-- KDB Developer Lv.1
 - ...

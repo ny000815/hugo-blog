@@ -1,4 +1,4 @@
-baseURL = "https://ny000815.github.io/hugo-blog/"
+baseURL = "https://ny000815.github.io/hugo-blog/" 
 languageCode = "ja"
 defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = false
@@ -143,7 +143,7 @@ enableEmoji = true
   [params.author]
     name = "Yoshiaki Nozaki"
     title = "Yoshiaki's Blog"
-    description = "A personal blog sharing thoughts on studying"
+    description = "A personal blog sharing tips for studying"
     avatar = "https://i.postimg.cc/VkdTrhGD/avatar.jpg"
 
     [[params.author.social]]
@@ -163,7 +163,7 @@ enableEmoji = true
   languageSwitchMode = "dropdown"
 
   # Header sticky effect
-  stickyHeader = true
+  stickyHeader = true 
 
   # Dock display mode: "scroll", "always", "float"
   dock = "float"

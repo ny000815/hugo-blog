@@ -5,7 +5,7 @@ draft: false
 summary: "TOEFL単語を効率的に覚えるための考え方と実践方法を紹介します。"
 categories: ["TOEFL"]
 tags: ["TOEFL", "語彙", "英語"]
-cover: "https://i.postimg.cc/P5jBvNjJ/toefl-voca.png"
+cover: "https://i.postimg.cc/ydxPrPnw/toefl-voca.png"
 ---
 
 ## TOEFL単語学習で時間をロスしやすい理由
