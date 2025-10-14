@@ -1,6 +1,6 @@
 #[environments.development]
 #baseURL = "https://localhost/"
-[environments.production]
+#[environments.production]
 baseURL = "https://ny000815.github.io/hugo-blog/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
