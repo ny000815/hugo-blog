@@ -1,4 +1,4 @@
-# Hugo Blog(https://ny000815.github.io/hugo-blog)
+# [Hugo Blog](https://ny000815.github.io/hugo-blog)
 
 [![Hugo Blog Screenshot](https://i.postimg.cc/QM3KVQyY/hugo-blog.png)](https://ny000815.github.io/hugo-blog)
 
