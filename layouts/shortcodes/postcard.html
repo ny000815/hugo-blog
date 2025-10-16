@@ -1,0 +1,106 @@
+{{- $refRaw := .Get "ref" -}}
+{{- if not $refRaw -}} {{ errorf "postcard: ref param required" }} {{- end -}}
+
+{{- $ref := cond (hasPrefix $refRaw "/") $refRaw (printf "/%s" $refRaw) -}}
+
+{{- $p := site.GetPage $ref -}}
+
+{{- if not $p -}}
+  {{- $langcode := .Page.Lang -}}
+  {{- $prefixed := printf "/%s%s" $langcode $ref -}}
+  {{- $p = site.GetPage $prefixed -}}
+{{- end -}}
+
+{{- if not $p -}}
+  {{ errorf "postcard: page not found for ref=%q (also tried with lang prefix)" $ref }}
+{{- else -}}
+  {{- $title := or $p.Params.title $p.Title -}}
+  {{- $desc  := or $p.Params.description $p.Summary -}}
+
+  {{- $img := "" -}}
+  {{- if isset $p.Params "images" -}}
+    {{- $img = index $p.Params.images 0 | default "" -}}
+  {{- else if isset $p.Params "cover" -}}
+    {{- $img = $p.Params.cover | default "" -}}
+  {{- else -}}
+    {{- with $p.Resources.GetMatch "*cover*" -}}
+      {{- $img = .RelPermalink -}}
+    {{- else -}}
+      {{- with $p.Resources.GetMatch "*featured*" -}}
+        {{- $img = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $coverImage := "" -}}
+  {{- $placeholderData := dict -}}
+  {{- $gradients := slice "from-blue-500/20 to-purple-500/10" "from-emerald-500/20 to-cyan-500/10" "from-amber-500/20 to-rose-500/10" -}}
+  {{- $colorIndex := 0 -}}
+
+  {{- if $img }}
+    {{- partial "content/image-processor.html" (dict
+      "context" $p
+      "src" $img
+      "alt" $title
+      "enableModal" false
+      "enableResponsive" true
+      "enablePlaceholder" false
+      "outputType" "data"
+    ) -}}
+    {{- $coverImage = $p.Scratch.Get "imageUrl" | default "" -}}
+    {{- $placeholderData = $p.Scratch.Get "placeholderData" | default dict -}}
+    {{- $gradients = $placeholderData.gradients | default $gradients -}}
+    {{- $colorIndex = $placeholderData.colorIndex | default 0 -}}
+    {{- $colorIndex = mod (int $colorIndex) (len $gradients) -}}
+    {{- $p.Scratch.Delete "imageUrl" -}}
+    {{- $p.Scratch.Delete "imageResource" -}}
+    {{- $p.Scratch.Delete "placeholderData" -}}
+  {{- end }}
+
+  {{- $theDate := or $p.Date (or $p.PublishDate $p.Lastmod) -}}
+
+  <a href="{{ $p.RelPermalink }}"
+     class="group block rounded-2xl border border-border bg-card hover:bg-accent/40 hover:shadow-sm transition-colors duration-300 p-4 no-underline">
+    <div class="flex gap-4 items-start">
+      <div class="relative shrink-0">
+        {{- if $coverImage }}
+          <img
+            src="{{ $coverImage }}"
+            alt="{{ $title }}"
+            class="w-56 h-24 rounded-xl object-cover ring-1 ring-black/5 dark:ring-white/10"
+            loading="lazy"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="{{ index $gradients $colorIndex }} hidden w-24 h-24 items-center justify-center rounded-xl bg-gradient-to-br">
+            <span class="text-xl font-bold text-white">{{ substr $title 0 1 | upper }}</span>
+          </div>
+        {{- else }}
+          <div class="{{ index $gradients $colorIndex }} w-24 h-24 flex items-center justify-center rounded-xl bg-gradient-to-br">
+            <span class="text-xl font-bold text-white">{{ substr $title 0 1 | upper }}</span>
+          </div>
+        {{- end }}
+      </div>
+
+      <div class="min-w-0">
+        <h3 class="text-foreground text-base font-semibold line-clamp-2">
+          <span class="group-hover:underline group-hover:decoration-dotted">{{ $title }}</span>
+        </h3>
+
+        {{- if $desc }}
+          <p class="text-muted-foreground text-sm line-clamp-2 mt-1">{{ $desc }}</p>
+        {{- end }}
+
+        <div class="text-muted-foreground mt-3 flex items-center gap-3 text-xs">
+          {{- if $theDate }}
+            <span class="inline-flex items-center gap-1">
+              {{- with partial "features/icon.html" (dict "name" "calendar" "size" "sm" "ariaLabel" "") -}}{{ . }}{{- end -}}
+              <time datetime="{{ time.Format "2006-01-02" $theDate }}">{{ time.Format "Jan 2, 2006" $theDate }}</time>
+            </span>
+          {{- end }}
+          {{- with $p.ReadingTime }}
+          {{- end }}
+        </div>
+      </div>
+    </div>
+  </a>
+{{- end -}}
+
