@@ -8,13 +8,14 @@ tags: ["TOEFL", "英語"]
 cover: "https://i.postimg.cc/wTNdG5bZ/toeic-900.png"
 ---
 
-![](https://i.postimg.cc/J0WzYPc7/toefl-score.jpg)
-
 ## MyBestスコア[^1]推移
 [^1]: 古いテストの通常スコアの確認期限が切れており、MyBestスコアのみ確認できるため、MyBestに統一。 
+
+### 最終スコア
+![](https://i.postimg.cc/J0WzYPc7/toefl-score.jpg)
+
 ### 留学[^2]前
 [^2]: アメリカの大学への10ヶ月の交換留学
-
 ![](https://i.postimg.cc/28qZp4LN/toefl-score-after.png)
 
 ### 留学後
