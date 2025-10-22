@@ -16,10 +16,12 @@ cover: "https://i.postimg.cc/wTNdG5bZ/toeic-900.png"
 
 ### 留学[^2]前
 [^2]: アメリカの大学への10ヶ月の交換留学
-![](https://i.postimg.cc/28qZp4LN/toefl-score-after.png)
+
+![](https://i.postimg.cc/HLWMhFQ2/toefl-score-before.png)
 
 ### 留学後
-![](https://i.postimg.cc/HLWMhFQ2/toefl-score-before.png)
+
+![](https://i.postimg.cc/28qZp4LN/toefl-score-after.png)
 
 ## 元々の英語力
 
