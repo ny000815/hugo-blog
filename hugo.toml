@@ -1,4 +1,4 @@
-baseURL = "https://ny000815.github.io/" 
+baseURL = "https://ny000815.github.io/hugo-blog/" 
 languageCode = "ja"
 defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = false
@@ -238,8 +238,8 @@ enableEmoji = true
       lang = "en"
 
   [params.analytics.google]
-    enabled = false
-    id = "your-google-analytics-id"
+    enabled = true 
+    id = "G-R55FHM9685"
 
   [params.katex]
     enabled = true
