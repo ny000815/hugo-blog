@@ -125,3 +125,7 @@ cover: "https://i.postimg.cc/wTNdG5bZ/toeic-900.png"
 ##### ⭐️★★★★
 -  {{< mercari q="公式TOEFL 英単語" >}}: 単語レベルが低い。例文はよかったです。自分には合わず途中でやめました。
 
+---
+
+#### その他
+[トフレ！葛山さんのブログ](https://tofure.com/blog/): TOEFLに関する、悩み相談回答などの参考になる情報が掲載されています。

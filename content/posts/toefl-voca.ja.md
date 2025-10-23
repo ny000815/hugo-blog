@@ -2,7 +2,7 @@
 title: "TOEFL単語学習で時間ロスをしないためには"
 date: 2025-10-14T10:00:00+09:00
 draft: false
-summary: "TOEFL単語を効率的に覚えるための考え方と実践方法を紹介します。"
+summary: "TOEFL単語を効率的に覚えるための勉強方法を紹介します。"
 categories: ["TOEFL"]
 tags: ["TOEFL", "単語", "英語"]
 cover: "https://i.postimg.cc/ydxPrPnw/toefl-voca.png"
