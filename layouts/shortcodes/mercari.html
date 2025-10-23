@@ -4,7 +4,8 @@
 {{- if not $q -}}
   {{- errorf "mercari shortcode: q is required" -}}
 {{- else -}}
-  {{- $href := printf "https://jp.mercari.com/search?keyword=%s" (urlquery $q) -}}
+  {{- $encoded := replace $q " " "%20" -}}
+  {{- $href := printf "https://jp.mercari.com/search?keyword=%s" $encoded -}}
   <a href="{{ $href | safeURL }}">{{ $text }}</a>
 {{- end -}}
 
