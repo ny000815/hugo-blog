@@ -1,0 +1,10 @@
+{{- $q := (.Get "q") | default "" | strings.TrimSpace -}}
+{{- $text := (.Get "text") | default $q -}}
+
+{{- if not $q -}}
+  {{- errorf "mercari shortcode: q is required" -}}
+{{- else -}}
+  {{- $href := printf "https://jp.mercari.com/search?keyword=%s" (urlquery $q) -}}
+  <a href="{{ $href | safeURL }}">{{ $text }}</a>
+{{- end -}}
+

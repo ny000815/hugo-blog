@@ -1,4 +1,4 @@
-baseURL = "https://ny000815.github.io/hugo-blog/" 
+baseURL = "https://https://ny000815.github.io/hugo-blog/" 
 languageCode = "ja"
 defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = false
@@ -236,6 +236,9 @@ enableEmoji = true
       inputPosition = "bottom"
       theme = "preferred_color_scheme"
       lang = "en"
+
+  [params.analytics]
+    enabled = true     
 
   [params.analytics.google]
     enabled = true 
