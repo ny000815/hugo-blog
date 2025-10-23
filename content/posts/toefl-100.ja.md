@@ -99,7 +99,7 @@ cover: "https://i.postimg.cc/wTNdG5bZ/toeic-900.png"
 ![](https://i.postimg.cc/jSgr4D59/toefl-books.png)
 
 ##### ⭐︎⭐︎⭐︎⭐︎⭐︎
-- [English Inteligence](https://atsueigo.com/LINEprem/English%20Intelligence%20Premium.pdf) 英語後学習の全体像を俯瞰できます。無料pdf。
+- [English Inteligence](https://atsueigo.com/LINEprem/English%20Intelligence%20Premium.pdf): 英語後学習の全体像を俯瞰できます。無料pdf。
 - {{< mercari q="Vocaburalist" >}}:  単語学習方法の目標・戦略・戦術の3段階で論理的に言語化されている。
 - {{< mercari q="TOEFL iBT OFFICIAL GUIDE" >}}: 定番。公式の英文・問題なので、完璧にできるのが理想。勉強したての時は、英文解説が厳しいかもしれません。
 - {{< mercari q="TOEFL iBT OFFICIAL TEST" >}}: 定番。問題演習。中古で買う際には、Official Guideもそうですが、パソコン上での本番形式で問題が解けるバウチャーが有効かどうか確認しましょう。
