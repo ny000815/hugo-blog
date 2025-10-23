@@ -98,7 +98,7 @@ cover: "https://i.postimg.cc/wTNdG5bZ/toeic-900.png"
 
 ![](https://i.postimg.cc/jSgr4D59/toefl-books.png)
 
-##### ⭐︎⭐︎⭐︎⭐︎⭐︎
+##### ⭐️⭐️⭐️⭐️⭐️
 - [English Inteligence](https://atsueigo.com/LINEprem/English%20Intelligence%20Premium.pdf): 英語後学習の全体像を俯瞰できます。無料pdf。
 - {{< mercari q="Vocaburalist" >}}:  単語学習方法の目標・戦略・戦術の3段階で論理的に言語化されている。
 - {{< mercari q="TOEFL iBT OFFICIAL GUIDE" >}}: 定番。公式の英文・問題なので、完璧にできるのが理想。勉強したての時は、英文解説が厳しいかもしれません。
@@ -108,20 +108,20 @@ cover: "https://i.postimg.cc/wTNdG5bZ/toeic-900.png"
 - {{< mercari q="極めろ!TOEFL iBTテスト スピーキング・ライティング" >}}: 薄いのでやり切りやすく、おすすめです。
 - {{< mercari q="ここで差がつく！英文ライティングの技術" >}}: 先生と生徒の会話調で取り組みやすく、わかりやすいです。
 
-##### ⭐︎⭐︎⭐︎⭐︎★
+##### ⭐️⭐️⭐️⭐️★
 - {{< mercari q="DELTA'S TOEFL iBT Reading" >}}: トフレの授業で使用。問題の分類と回答の説明がわかりやすいです。
 - {{< mercari q="極めろ!TOEFL iBTテスト リーディング・リスニング" >}}: 問題数は少ないが、初心者の方には良さそうです。
 - {{< mercari q="TOEFL テスト 集中攻略 リーディング" >}}: 問題数が多くて良いです。
 - {{< mercari q="TOEFL テスト 集中攻略 リスニング" >}}: 問題数が多くて良いです。
 - {{< mercari q="TOEFL テスト 集中攻略 スピーキング" >}}: 問題数が多くて良いです。
 
-##### ⭐︎⭐︎⭐︎★★
+##### ⭐️⭐️⭐️★★
 - {{< mercari q="分野別 IELTS英単語" >}}: 3800だけで単語力が足りず、読みましたが、あんまり必要ありませんでした。公式問題や過去問の演習の中で単語の補強をした方が効率的。
 
-##### ⭐︎⭐︎★★★
+##### ⭐️⭐️★★★
 - {{< mercari q="TOEFL 英熟語700" >}}: 一度通読する程度で十分。
 - {{< mercari q="TOEFL ライティング問題" >}}: 本の形式が私にはあっていませんでした。
 
-##### ⭐︎★★★★
+##### ⭐️★★★★
 -  {{< mercari q="公式TOEFL 英単語" >}}: 単語レベルが低い。例文はよかったです。自分には合わず途中でやめました。
 
