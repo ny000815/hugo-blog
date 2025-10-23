@@ -104,22 +104,22 @@ enableEmoji = true
       icon = "github"
 
   [[menus.social]]
-    name = "Twitter"
-    url = "https://twitter.com/username"
+    name = "X"
+    url = "https://x/yoshiaki_42"
     weight = 20
     [menus.social.params]
       icon = "twitter"
 
   [[menus.social]]
     name = "LinkedIn"
-    url = "https://linkedin.com/in/username"
+    url = "https://linkedin.com/in/yoshiakin"
     weight = 30
     [menus.social.params]
       icon = "linkedin"
 
   [[menus.social]]
     name = "Email"
-    url = "mailto:your.email@example.com"
+    url = "mailto:layo19181@g.nihon-u.ac.jp"
     weight = 40
     [menus.social.params]
       icon = "email"
@@ -153,7 +153,7 @@ enableEmoji = true
 
     [[params.author.social]]
       name = "Twitter"
-      url  = "https://twitter.com/"
+      url  = "https://twitter.com/yoshiaki_42"
       icon = "twitter"
 
   # UI Components Control
