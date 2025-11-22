@@ -98,14 +98,14 @@ enableEmoji = true
   # social
   [[menus.social]]
     name = "GitHub"
-    url = "https://github.com/username"
+    url = "https://github.com/ny000815"
     weight = 10
     [menus.social.params]
       icon = "github"
 
   [[menus.social]]
     name = "X"
-    url = "https://x/yoshiaki_42"
+    url = "https://x/ny000815"
     weight = 20
     [menus.social.params]
       icon = "twitter"
