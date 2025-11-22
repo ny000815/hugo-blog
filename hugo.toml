@@ -83,7 +83,7 @@ enableEmoji = true
 
   [[menus.footer]]
     name = "Contact"
-    url = "https://google.com"
+    url = "mailto:layo19181@g.nihon-u.ac.jp"
     weight = 20
     [menus.footer.params]
       icon = "contact"
@@ -153,7 +153,7 @@ enableEmoji = true
 
     [[params.author.social]]
       name = "Twitter"
-      url  = "https://twitter.com/yoshiaki_42"
+      url  = "https://twitter.com/ny000815"
       icon = "twitter"
 
   # UI Components Control
